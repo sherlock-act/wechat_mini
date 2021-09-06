@@ -1,0 +1,23 @@
+view{
+    margin: 20rpx;
+  }
+  input{
+    border-bottom: 2rpx solid #ccc;
+  }
+  radio{
+    display:block;
+    margin: 8rpx;
+  }
+  checkbox{
+    display: block;
+    margin: 8rpx;
+  }
+  textarea{
+    border: 2rpx solid #ccc;
+    height: 100rpx;
+  }
+  button{
+    border: 2rpx solid #ccc;
+    background-color: #369;
+    margin: 30rpx;
+  }

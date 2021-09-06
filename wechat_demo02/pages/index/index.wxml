@@ -1,0 +1,28 @@
+<form bindsubmit="submit">
+  <view>
+    <text>姓名:</text>
+    <input type="text" name="name"/>
+  </view>
+  <view>
+    <text>性别:</text>
+    <radio-group name="gender">
+      <radio value="0" checked>男</radio>
+      <radio value="1">女</radio>
+    </radio-group>
+  </view>
+  <view>
+    <text>专业技能:</text>
+    <checkbox-group name="skills">
+      <checkbox value="html">HTML</checkbox>
+      <checkbox value="css">CSS</checkbox>
+      <checkbox value="js">javaScript</checkbox>
+      <checkbox value="ps">PhotoShop</checkbox>
+    </checkbox-group>
+  </view>
+  <view>
+    <text>您的意见:</text>
+    <textarea name="option"></textarea>
+  </view>
+  <button form-type="submit">提交</button>
+  <button form-type="reset">清空</button>
+</form>
