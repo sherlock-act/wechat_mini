@@ -1,1 +1,15 @@
-<view>palylist</view>
+<scroll-view class="content-playlist" scroll-y>
+  <view class="playlist-item" wx:for="{{playlist}}" bindtap="change" data-index="{{index}}" wx:key="id">
+  <!-- 显示歌曲封面 -->
+    <image class="playlist-cover" src="{{item.coverImgUrl}}"></image>
+    <!-- 显示歌曲信息 -->
+    <view class="playlist-info">
+      <view class="playlist-info-title">{{item.title}}</view>
+      <view class="playlist-info-singer">{{item.singer}}</view>
+    </view>
+    <!-- 显示是否正在播放 -->
+    <view class="playlist-controls">
+      <text wx:if="{{index==playIndex}}">正在播放</text>
+    </view>
+  </view>
+</scroll-view>

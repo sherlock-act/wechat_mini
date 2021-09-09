@@ -1,28 +1,61 @@
-<!-- 轮播图 -->
-<swiper class="content-info-slide" indicator-color="rgb(255,255,255,.5" indicator-active-color="#fff" indicator-dots autoplay>
-    <swiper-item>
-        <image src="/images/eixa_cover.jpg" mode="aspectFill"></image>
-    </swiper-item>
-    <swiper-item>
-        <image src="/images/eixa_cover.jpg" mode="aspectFill"></image>
-    </swiper-item>
-    <swiper-item>
-        <image src="/images/eixa_cover.jpg" mode="aspectFill"></image>
-    </swiper-item>
-</swiper>
+<scroll-view scroll-y class="content-info">
+    <!-- 轮播图 -->
+    <swiper class="content-info-slide" indicator-color="rgb(255,255,255,.5" indicator-active-color="#fff" indicator-dots autoplay>
+        <swiper-item>
+            <image src="/images/eixa_cover.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/eixa_cover.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/eixa_cover.jpg" mode="aspectFill"></image>
+        </swiper-item>
+    </swiper>
 
-<!-- 功能按钮 -->
-<view class="content-info-portal">
-    <view>
-        <image src="/images/04.png"></image>
-        <text>私人FM</text>
+    <!-- 功能按钮 -->
+    <view class="content-info-portal">
+        <view>
+            <image src="/images/04.png"></image>
+            <text>私人FM</text>
+        </view>
+        <view>
+            <image src="/images/05.png"></image>
+            <text>每日歌曲推荐</text>
+        </view>
+        <view>
+            <image src="/images/06.png"></image>
+            <text>云音乐新歌榜</text>
+        </view>
     </view>
-    <view>
-        <image src="/images/05.png"></image>
-        <text>每日歌曲推荐</text>
+
+    <!-- 推荐部分 -->
+    <view class="content-info-list">
+        <view class="list-title">推荐歌曲</view>
+        <view class="list-inner">
+            <view class="list-item">
+                <image src="/images/reminiscence.jpg"></image>
+                <view>走不出的回忆</view>
+            </view>
+            <view class="list-item">
+                <image src="/images/strike_freedom.jpg"></image>
+                <view>星の扉</view>
+            </view>
+            <view class="list-item">
+                <image src="/images/freedom_gundom.jpg"></image>
+                <view>暁の車</view>
+            </view>
+            <view class="list-item">
+                <image src="/images/inside.jpg"></image>
+                <view>Inside the Lines</view>
+            </view>
+            <view class="list-item">
+                <image src="/images/say.jpg"></image>
+                <view>say you love me</view>
+            </view>
+            <view class="list-item">
+                <image src="/images/zhizun.jpg"></image>
+                <view>我为至尊</view>
+            </view>
+        </view>
     </view>
-    <view>
-        <image src="/images/06.png"></image>
-        <text>云音乐新歌榜</text>
-    </view>
-</view>
+</scroll-view>

@@ -17,4 +17,21 @@
 </view>
 
 <!-- 底部播放器 -->
-<view class="player"></view>
+<view class="player">
+<!-- 播放歌曲信息 -->
+    <image class="player-cover" src="{{play.coverImgUrl}}"></image>
+    <view class="play-info">
+        <view class="play-info-title">{{play.title}}</view>
+        <view class="play-info-singer">{{play.singer}}</view>
+    </view>
+    <!-- 播放控制 -->
+    <view class="play-controls">
+        <!-- 切换到播放列表 -->
+        <image src="/images/01.png" bindtap="changeItem" data-item="2"></image>
+        <!-- 播放 -->
+        <image wx:if="{{state == 'paused'}}" src="/images/02.png" bindtap="playMusic"></image>
+        <image wx:else src="/images/02stop.png" bindtap="pauseMusic"></image>
+        <!-- 下一曲 -->
+        <image src="/images/03.png" bindtap="nextMusic"></image>
+    </view>
+</view>

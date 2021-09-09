@@ -19,7 +19,25 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-
+        // 创建InnerAudioContext对象
+        // var audioCtx = wx.createAudioContext("id")
+        const audioCtx = wx.createInnerAudioContext()
+        // 设置音频资源地址
+        audioCtx.src="/audio/Kenichiro Nishihara - Say You Love Me.mp3"
+        // 当开始播放的时候,输出调试信息
+        audioCtx.onPlay(function(){
+            console.log("开始播放")
+        })
+        // 当发生错误的时候,输出调试信息
+        audioCtx.onError(function(res){
+            console.log(res.errMsg)  //错误信息
+            console.log(res.errorCode)  // 错误码
+        })
+        // 开始播放
+        audioCtx.play()
+    },
+    sliderChanging:function(e){
+        console.log(e.detail.value)
     },
 
     /**
