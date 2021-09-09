@@ -1,0 +1,68 @@
+page{
+    display: flex;
+    flex-direction: column;
+    background-color: #17181a;
+    color: #ccc;
+    height: 100%;
+}
+
+.tab{
+    display: flex;
+}
+
+.tab-item{
+    flex: 1;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 72rpx;
+    border-bottom: 6rpx solid #eee;
+}
+
+.content{
+    flex: 1;
+}
+
+.content>swiper{
+    height: 100%;
+}
+
+.player{
+    background: #222;
+    border-top: 1rpx solid #252525;
+    height: 112rpx;
+}
+
+.tab-item.active{
+    color: #c25b5b;
+    border-bottom-color: #c25b5b;
+}
+
+.content-info{
+    height: 100%;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar{
+    height: 0rpx;
+    width: 0rpx;
+    color: transparent;
+}
+
+.content-info-slide{
+    height: 302rpx;
+    margin-bottom: 20rpx;
+}
+
+.content-info-slide image{
+    width: 100%;
+    height: 100%;
+}
+
+.content-info-portal{
+    display: flex;
+    margin-bottom: 15rpx;
+}
+
+.content-info-portal view{
+    flex
+}
