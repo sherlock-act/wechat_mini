@@ -5,7 +5,25 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        latitude:30.894537,
+        longitude:103.598453,
+        markers:[{
+            iconPath:"/images/navi.png",
+            id:0,
+            latitude:30.894537,
+            longitude:103.598453,
+            width:50,
+            height:50
+        }]
+    },
+    markertap:function(){
+        wx.openLocation({
+            latitude: this.data.latitude,
+            longitude: this.data.longitude,
+            name: "豪生酒店",
+            address:"都江堰"
+        })
+        
     },
 
     /**
@@ -62,5 +80,17 @@ Page({
      */
     onShareAppMessage: function () {
 
+    },
+    buttonTap:function(){
+        wx.getLocation({
+        //   altitude: 'altitude',
+            type:'gcj02',
+            success:function(res){
+                wx.openLocation({
+                  latitude: res.latitude,
+                  longitude: res.longitude,
+                })
+            }
+        })
     }
 })

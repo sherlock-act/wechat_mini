@@ -1,2 +1,5 @@
-<!--pages/map/map.wxml-->
-<text>pages/map/map.wxml</text>
+<!-- 地图组件 -->
+<!-- <map name="marry_place" latitude="30.894537" longitude="103.598453" scale="18"></map> -->
+<map name="marry_place" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" bindmarkertap="markertap"></map>
+
+<!-- <button bindtap="buttonTap">查看我的位置</button> -->
