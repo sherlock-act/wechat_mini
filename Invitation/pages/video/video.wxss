@@ -1,1 +1,8 @@
-/* pages/video/video.wxss */
+video{
+  width: 100vw;
+}
+
+input{
+  border: 1rpx solid #ccc;
+  margin: 20rpx;
+}
