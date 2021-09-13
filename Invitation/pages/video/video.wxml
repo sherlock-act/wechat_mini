@@ -1,0 +1,4 @@
+<video src="{{src}}" danmu-list="{{danmuList}}" id="myVideo" enable-danmu danmu-btn controls></video>
+<input bindblur='bindInputBlur' />
+<button bindtap="bindSendDanmu">发送弹幕</button>
+
