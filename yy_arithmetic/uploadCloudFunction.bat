@@ -1,0 +1,1 @@
+"D:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e equipment-manager-39rub --n quickstartFunctions --r --project "E:\Study\Git_resp\wechat_mini\yy_arithmetic" --report_start --report

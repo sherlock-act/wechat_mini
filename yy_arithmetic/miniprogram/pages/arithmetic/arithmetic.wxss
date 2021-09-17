@@ -1,0 +1,23 @@
+.bg{
+  width: 100vw;
+  height: 100vh;
+}
+
+.topic{
+  position: absolute;
+  width: 94vw;
+  height: 94vh;
+  background-color: #ccc;
+  left: 3vw;
+  top: 3vh;
+  z-index: 1;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic_button{
+  display: flex;
+  flex-direction: row;
+  
+}

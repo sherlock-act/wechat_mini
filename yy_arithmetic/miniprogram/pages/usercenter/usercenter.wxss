@@ -1,0 +1,38 @@
+.user_info{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 20vh;
+  /* background-color: aqua; */
+  align-items: center;
+  border-bottom: 3rpx solid #ccc;
+}
+
+.user_info_avatar{
+  width: 10vh;
+  height: 10vh;
+  border-radius: 15rpx;
+  padding: 0 20rpx;
+}
+
+.user_info_content{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.loginButton{
+  /* border: 2rpx solid #000; */
+  width: 20vw;
+  height: 5vh;
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  line-height: 5vh;
+  border-radius: 15rpx;
+  margin: 10rpx;
+}
+
+.remind{
+  margin-top: 40rpx;
+}

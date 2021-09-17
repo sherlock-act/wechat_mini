@@ -1,0 +1,19 @@
+<view class="user_info">
+  <image class="user_info_avatar" src="{{userAvatar}}"></image>
+  <view class="user_info_content" wx:if="{{isLogin}}">
+    <view>
+      <view>{{userName}}</view>
+      <view>学习从来无捷径，循序渐进登高峰。-—高永祚</view>
+    </view>
+    <view>
+      <view class="loginButton" bindtap="clearLoginInfo">注销</view>
+    <view class="loginButton" bindtap="selectRecord">查询</view>
+    </view>
+  </view>
+  <view class="user_info_content" wx:if="{{!isLogin}}">
+    <view>
+      <view class="loginButton" bindtap="getLoginInfo">登录</view>
+      <view class="remind">请先登录才能使用其他功能</view>
+    </view>
+  </view>
+</view>

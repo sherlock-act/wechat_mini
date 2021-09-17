@@ -1,0 +1,15 @@
+<image src="cloud://equipment-manager-39rub.6571-equipment-manager-39rub-1302328124/yy_arithmetic/pkq_bg.jpg" class="bg"></image>
+<form class="topic">
+  <!-- 题目区域 -->
+    <view class="topic_title" wx:for="{{topic_list}}" wx:key="topic">
+      <label>{{item}}</label>
+    <input type="number"/>
+  </view>
+  <!-- 按钮区域 -->
+  <view class="topic_button">
+    <button form-type="reset">清空</button>
+    <button form-type="submit">提交</button>
+  </view>
+  
+</form>
+<view>{{openId}}</view>
